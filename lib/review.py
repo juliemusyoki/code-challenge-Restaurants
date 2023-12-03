@@ -1,3 +1,4 @@
+# review.py
 class Review:
     reviews = []
 
@@ -10,12 +11,5 @@ class Review:
     def rating(self):
         return self.rating
 
-    @classmethod
-    def all(cls):
-        return cls.reviews
-
-    def customer(self):
-        return self.customer
-
-    def restaurant(self):
-        return self.restaurant
+    def all(self):
+        return Review.reviews
