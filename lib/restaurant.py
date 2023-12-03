@@ -1,17 +1,17 @@
+from review import Review
 class Restaurant:
     restaurants = []
 
     def __init__(self, name):
         self.name = name
+        self.reviews = []
         Restaurant.restaurants.append(self)
 
     def name(self):
         return self.name
 
     def reviews(self):
-        # Implement the logic to retrieve reviews for this restaurant
-        pass
+        return [review for review in Review.reviews if review.restaurant == self]
 
     def customers(self):
-        # Implement the logic to retrieve customers who have reviewed this restaurant
-        pass
+        return list(set([review.customer for review in self.reviews()]))
