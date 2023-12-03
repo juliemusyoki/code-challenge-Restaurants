@@ -18,3 +18,12 @@ class Customer:
     @classmethod
     def all(cls):
         return cls.customers
+
+    def restaurants(self):
+        # Implement the logic to retrieve unique restaurants this customer has reviewed
+        pass
+
+    def add_review(self, restaurant, rating):
+        # Implement the logic to add a review for this customer and restaurant
+        review = Review(self, restaurant, rating)
+        return review
