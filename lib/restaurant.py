@@ -1,24 +1,17 @@
 class Restaurant:
+    restaurants = []
+
     def __init__(self, name):
         self.name = name
-        self.reviews = []
+        Restaurant.restaurants.append(self)
 
-    @staticmethod
-    def all(restaurants):
-        return restaurants
+    def name(self):
+        return self.name
 
     def reviews(self):
-        return self.reviews
+        # Implement the logic to retrieve reviews for this restaurant
+        pass
 
     def customers(self):
-        return list(set([review.customer() for review in self.reviews]))
-
-    def average_star_rating(self):
-        if not self.reviews:
-            return 0
-
-        total_rating = sum(review.rating for review in self.reviews)
-        return total_rating / len(self.reviews)
-
-    def add_review(self, review):
-        self.reviews.append(review)
+        # Implement the logic to retrieve customers who have reviewed this restaurant
+        pass
