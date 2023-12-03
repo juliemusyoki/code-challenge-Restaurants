@@ -1,19 +1,18 @@
+# main.py
 from customer import Customer
-from restaurant import Restaurant
 from review import Review
+from restaurant import Restaurant
 
-# Sample instances
 customer1 = Customer("John", "Doe")
-customer2 = Customer("Jane", "Smith")
+customer2 = Customer("Jane", "Doe")
+restaurant1 = Restaurant("Cafe de Paris")
+restaurant2 = Restaurant("Italiano Pizzeria")
 
-restaurant1 = Restaurant("Diner")
-restaurant2 = Restaurant("Pizzeria")
-
-# Adding reviews
 review1 = customer1.add_review(restaurant1, 4)
 review2 = customer2.add_review(restaurant1, 5)
 review3 = customer1.add_review(restaurant2, 3)
 
-# Testing relationships
-print(customer1.reviews())  
-print(restaurant1.customers())   
+print(customer1.restaurants())
+print(customer2.restaurants())
+print(restaurant1.customers())
+print(restaurant2.customers())
