@@ -2,20 +2,20 @@ class Review:
     all_reviews = []
 
     def __init__(self, customer, restaurant, rating):
-        self.customer = customer
-        self.restaurant = restaurant
-        self.rating = rating
+        self.customer_obj = customer
+        self.restaurant_obj = restaurant
+        self._rating = rating
         Review.all_reviews.append(self)
 
-    def rating(self):
-        return self.rating
+    def get_rating(self):
+        return self._rating
 
     @classmethod
     def all(cls):
         return cls.all_reviews
 
     def customer(self):
-        return self.customer
+        return self.customer_obj
 
     def restaurant(self):
-        return self.restaurant
+        return self.restaurant_obj
