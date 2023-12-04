@@ -19,7 +19,6 @@ project_root/
     main.py: The main script for running and testing the project. Creates sample instances and tests methods for Customer, Restaurant, and Review classes.
 
     lib/: A folder containing library modules.
-        init.py: Initialization file marking the lib folder as a Python package.
         customer.py: Module defining the Customer class with methods for customer management.
         restaurant.py: Module defining the Restaurant class with methods for restaurant management.
         review.py: Module defining the Review class with methods for creating and retrieving reviews.
