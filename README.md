@@ -30,11 +30,11 @@ project_root/
 
 bash
 
-python main.py
+python3 main.py
 
 
 ## Known Bugs
-    The toy problem work fine.
+    Everything works fine.
 
 ## Technologies used
     - Python
