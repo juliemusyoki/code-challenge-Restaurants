@@ -12,7 +12,6 @@ The project is organized into the following structure:
 project_root/
 |-- main.py
 |-- lib/
-|   |-- __init__.py
 |   |-- customer.py
 |   |-- restaurant.py
 |   |-- review.py
@@ -24,7 +23,7 @@ project_root/
         customer.py: Module defining the Customer class with methods for customer management.
         restaurant.py: Module defining the Restaurant class with methods for restaurant management.
         review.py: Module defining the Review class with methods for creating and retrieving reviews.
-        
+
 ## Setup/Installation Requirements
 - Ensure you have Python installed on your machine.
 - Navigate to the project directory in the terminal.
